@@ -1,0 +1,25 @@
+
+.image{
+    height: 350px;
+    width: auto;
+}
+.card-style{
+    padding: 0;
+    text-align: center;
+    background-color: rgb(238, 243, 247);
+    margin: auto;
+}
+
+@media(max-width: 870px){
+    .row{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width: 770px){
+    .row{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
