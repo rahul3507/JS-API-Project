@@ -48,6 +48,48 @@
                 </div>
               </div>
         </div>
+
+        <div class="row gap-4 my-4" >
+          <div class="card text-center">
+            <div class="card-body">
+              <h2 class="card-title">Random Kanya Quote</h2>
+              <blockquote id="kanyeQuote"></blockquote>
+              <a href="#" class="btn btn-primary" onclick="getRandomKanyaQuote()">Click me</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card weather-card">
+              <div class="card-body text-center">
+                  <h2>Weather Search</h2>
+                  <p>Enter a city or country name to get the current weather</p>
+
+                  <div class="input-group my-3">
+                      <input type="text" id="locationInput" class="form-control" placeholder="Enter city or country name" aria-label="location">
+                      <button class="btn btn-primary" onclick="fetchWeather()">Get Weather</button>
+                  </div>
+
+                  <div id="weatherData"></div>
+
+              </div>
+          </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-6 my-3">
+              <div class="card text-center">
+                  <div class="card-body">
+                      <h2>Search University</h2>
+                      <input placeholder="Enter Country name" class="form-control" type="text" id="countryInput">
+                      <button class="btn btn-info my-3" onclick="fetchUniversities()">Search University</button>
+                      <ul id="universityList" class="list-group my-1"></ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
         
     </div>
 </body>
